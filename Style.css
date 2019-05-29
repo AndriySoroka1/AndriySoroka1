@@ -1,0 +1,75 @@
+body{background: url("bground2.jpg") no-repeat;
+    background-size: 100%;
+    background-color: #87CEFF}
+
+footer{padding:5px;}
+   .col1 {float: left; text-align: center; height: 100px; width: 290px; background: #FFB6C1; color: #fff }    
+   .col2 {float: left; text-align: center; height: 100px; width: 290px; background: #DB7093; color: #fff }
+   .col3 {float: left; text-align: center; height: 100px; width: 290px; background: #FFB6C1; color: #fff }    
+   .col4 {float: left; text-align: center; height: 100px; width: 290px; background: #DB7093; color: #fff }   
+   
+   footer { text-align: center; background: #6CA6CD; color: #fff; clear: left;}
+   h1 {
+   text-align: center;
+   background: #6CA6CD; color: #fff;
+   font-style: oblique;
+   font-family: Arial black; 
+   font-size: 250%;  
+   font-weight: lighter; 
+   }
+ 
+a{text-decoration: none;}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	right:0.7em;
+}
+.side{
+	position: absolute;
+	top:75px;
+	right: 0%;
+	width: 130px;
+	margin: 20px;
+}
+
+.menu a{
+	text-align: center;
+	background: #DB7093;
+	color: #fff;
+	padding: 16px;
+	display: block;
+	border-bottom: 1px solid #666;
+	transition: 0.5s all;
+}
+.menu a:hover{
+	background: #666;
+	padding: 10px 0 10px 20px;
+}
+.menulist{
+	position: relative;
+}
+.dropmenu{
+	position: absolute;
+	width: 100%;
+	right: 100%;
+	top: -9999em;
+	opacity: 0;
+	transition: 0.5s opacity;
+}
+.menulist:hover .dropmenu{
+	opacity:1;
+	top:0;
+}
+.menulist::after{
+	content: " ";
+	position: absolute;
+	border: 5px solid;
+	border-color:  transparent #eee transparent  transparent ;
+	top:1em;
+	left:0.7em;
+	transition: 0.5s;
+}
+.menulist:hover::after{
+	transform: scaleX(-1);
+}	
